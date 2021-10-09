@@ -1,0 +1,441 @@
+body{
+	background-image: url("images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	font-family: 'Permanent Marker', cursive;
+}
+
+/*Header*/
+.menu-options{
+	width: 80%;
+	margin-left: auto;
+	margin-right:auto;
+}
+#body .title{
+	color: blue;
+	text-align: center;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#header .logo{
+	text-align: center;
+}
+#header .logo img{
+	width:50%;
+	max-width:250px;
+	padding-top: 25px;
+	padding-bottom: 10px;
+	animation-name: breathe;
+	animation-duration: 1s;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+}
+.animateBox{
+	position:absolute;
+}
+
+.main_menu{
+	padding-top:325px;
+	padding-bottom:325px;
+}
+
+
+
+/*Background Animation*/
+.animate{
+	width:10%;
+	opacity: 0;
+	margin-left:3%;
+	animation-name: fall;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+#piece1{
+	animation-delay: 0s;
+}
+#piece2{
+	animation-delay: 8s;
+}
+#piece3{
+	animation-delay: 6s;
+}
+#piece4{
+	animation-delay: 11s;
+}
+#piece5{
+	animation-delay: 17s;
+}
+#piece6{
+	animation-delay: 14s;
+}
+#piece7{
+	animation-delay: 3s;
+}
+
+@keyframes fall{
+	0%{
+		transform: translate(0px, 0px);
+		opacity:0;
+	}
+	25%{
+		opacity:0.2;
+	}
+	50%{
+		opacity:0;
+	}
+	75%{
+		opacity:0.2;
+	}
+	100%{
+		transform: translate(0px, 825px);
+		opacity:0;
+	}
+}
+
+@keyframes breathe{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+
+
+
+/*How to Play*/
+#body .text{
+	font-size: 15px;
+	text-align: justify;
+}
+#body .paragraph_mobile .image{
+	text-align: center;
+	margin-top: auto;
+	margin-bottom:auto;
+}
+#body .paragraph_mobile{
+	margin-top: 50px;
+	margin-left:5%;
+	margin-right:5%;
+}
+#body .paragraph_mobile img{
+	width:100%;
+}
+
+
+
+/*High Score*/
+#body .subtitle{
+	text-align: center;
+	font-size: 30px;
+}
+#body .username, .age, .country, .score, .idUser{
+	width: 25%;
+	font-size: 20px;
+}
+#body .global, .regional{
+	text-align: center;
+}
+#body .resultsTable{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#body table td{
+	font-size:15px;
+}
+
+#body #country-id, #age-id{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.regional button{
+	margin-top:10px;
+}
+
+
+
+/*Play Game*/
+#body .piece, .player_score{
+	text-align: center;
+}
+#body .board{
+	margin-bottom:15px;
+	text-align: center;
+}
+#body .board_game{
+	margin-right: auto;
+	margin-left: auto;
+	max-width:400px;
+	height:100%;
+}
+#body .play{
+	margin-left:2%;
+	margin-right: 2%;
+}
+#body .submitArea, .resetAndQuit{
+	text-align:center;
+}
+#body .submitButton, .resetButton, .quitButton{
+	width:100%;
+}
+.empty{
+	width:19px;
+	height:19px;
+	background-color: black;
+	display:inline-block;
+	outline:3px solid grey;
+	margin:0px;
+	padding:0px;
+}
+.fill, .occupied{
+	width:19px;
+	height:19px;
+	background-color: blue;
+	display:inline-block;
+	outline:3px solid grey;
+}
+
+
+
+/*Add Score*/
+#body form{
+	margin:5%;
+}
+#body form label{
+	font-size:20px;
+}
+#body .display_score{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-size: 35px;
+}
+#body .error{
+	color:red;
+	font-size: 15px;
+	display:none;
+}
+#body .is-invalid{
+	display:inline;
+}
+
+
+/*Score Confirmation*/
+#body .confirmation-message{
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:200px;
+	padding-bottom: 200px;
+}
+
+/*Delete Score*/
+#body .submitDelete{
+	margin-left:5%;
+}
+#body #userSearch, #userID{
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+
+/*Footer*/
+#footer .website, .insta, .face{
+	width:10%;
+	margin-left: 15%;
+	max-width: 40px;
+}
+#footer .links {
+	padding-left: 25%;
+}
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	/*How to Play*/
+	#body .text{
+		font-size: 17px;
+		text-align: justify;
+	}
+
+	#body .paragraph_mobile .image{
+		text-align: center;
+		margin-top: auto;
+		margin-bottom:auto;
+	}
+
+	#body .paragraph_mobile{
+		margin-top: 50px;
+		margin-left:10%;
+		margin-right:10%;
+	}
+
+	#body .paragraph_mobile img{
+		width:100%;
+	}
+
+
+
+	/*High Score*/
+	#body .subtitle{
+		text-align: center;
+		font-size: 30px;
+	}
+	#body .username, .age, .country, .score{
+		width: 25%;
+		font-size: 20px;
+	}
+	#body table td{
+		font-size:20px;
+	}
+
+
+	/*Add Score*/
+	#body form label{
+		font-size:30px;
+	}
+	#body .display_score{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 50px;
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+	/*How to Play*/
+	#body .text{
+		font-size: 23px;
+		text-align: justify;
+	}
+
+	#body .paragraph_mobile .image{
+		text-align: center;
+		margin-top: auto;
+		margin-bottom:auto;
+	}
+
+	#body .paragraph_mobile{
+		margin-top: 50px;
+		margin-left:10%;
+		margin-right:10%;
+	}
+
+	#body .paragraph_mobile img{
+		width:100%;
+		max-width: 200px;
+	}
+
+
+
+	/*High Score*/
+	#body .subtitle{
+		text-align: center;
+		font-size: 50px;
+	}
+	#body .username, .age, .country, .score{
+		width: 25%;
+		font-size: 30px;
+	}
+	#body table span{
+		font-size: 30px;
+	}
+
+
+	/*Play Game*/
+	#body .board_game{
+		margin-right: auto;
+		margin-left: auto;
+		max-width: 400px;
+		height:100%;
+	}
+	#body .reset,.quit{
+		margin-left: auto;
+		margin-right: auto;
+		height:10%;
+	}
+	#body .piece, .player_score{
+		padding-top:40px;
+	}
+	#body .play{
+		margin-left:10%;
+		margin-right: 10%;
+	}
+	#body .next, .currentScore{
+		padding-top:50px;
+	}
+	.empty{
+		width:34px;
+		height:34px;
+		background-color: black;
+		display:inline-block;
+		outline:3px solid grey;
+		margin:0px;
+		padding:0px;
+	}
+	.fill, .occupied{
+		width:34px;
+		height:34px;
+		background-color: blue;
+		display:inline-block;
+		outline:3px solid grey;
+	}
+	#body h2{
+		font-size:50px;
+	}
+
+
+
+	/*Add Score*/
+	#body form label{
+		font-size:35px;
+	}
+	#body .display_score{
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		font-size: 60px;
+	}
+	#body #score-form{
+		margin:60px;
+	}
+
+	@keyframes fall{
+	0%{
+		transform: translate(0px, 0px);
+		opacity:0;
+	}
+	25%{
+		opacity:0.2;
+	}
+	50%{
+		opacity:0;
+	}
+	75%{
+		opacity:0.2;
+	}
+	100%{
+		transform: translate(0px, 750px);
+		opacity:0;
+	}
+}
+
+}
