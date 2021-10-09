@@ -1,1 +1,3 @@
 # Tetris_Website
+
+I developed a standard Tetris website using HTML and CSS. The website includes 4 main pages: Play, High Score, Instructions, and Main Menu. The user starts at main_menu and can decide to play the game, see the high scores, or read instructions on how to play. I used CSS to incorporate animations and tailored style sheets for desktops, tablets, and mobile phones. The functionality and user interaction of the game was developed through JavaScript with manipulation of CSS properties. I applied real time validation of inputs for submitting scores. High scores are stored in a CRUD database and presented on the website in real time through AJAX and JSON. Communication between database and website were done using SQL and HTTP Request.
